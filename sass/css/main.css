@@ -1,0 +1,56 @@
+/* Objective 2: Create a nested flexbox by making the `nav` element on a container. */
+nav {
+  display: flex;
+}
+
+/* Objective 3: Align the unordered list ot the right side of the nav element */
+nav ul {
+  margin-left: auto;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: indigo;
+  border: 1px solid grey;
+  display: block;
+  padding: 0.5em 1em;
+}
+
+nav ul a:hover {
+  background-color: #330066;
+  color: #ffff99;
+}
+
+nav ul a:active {
+  background-color: #ffff99;
+  color: #330066;
+}
+
+nav ul a.current {
+  background-color: #ffff99;
+  color: #330066;
+}
+
+body {
+  margin: 0;
+}
+
+/* Objective 3: Change the selectors in Resets and Setup below so that your anchor element styles only apply to the unordered list. We will style the home link in another lesson. */
+/* Resets and Setup */
+/* See: https://sait-wbdv.github.io/sample-code/frontend/heros/hover-active/ */
