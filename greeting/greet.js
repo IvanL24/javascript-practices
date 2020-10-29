@@ -1,18 +1,22 @@
-const languages = {
-  en: 'English',
-  es: 'Spanish',
-  ch: 'Chinese'
-};
 
-if (process.argv.length > 2) {
-  const pref = process.argv.slice(2);
+const lang = process.argv[2];
 
-  // https://stackoverflow.com/questions/5113374/javascript-check-if-variable-exists-is-defined-initialized
-  if (typeof languages[pref] !== 'undefined'){
-    console.log(languages[pref]);
+
+
+function greet(lang) {
+
+  if (lang === 'en') {
+    console.log("Hello!");
+  } else if (lang === "es") {
+    console.log("Hola!");
+  } else if (lang === "ch") {
+    console.log('Nihao!');
+  } else if (lang === "jp") {
+    console.log('Konnichiwa!');
   } else {
-    console.log('Language not found.');
+    console.log('language not defined.');
   }
-} else {
-  console.log('No language specified.');
+
 }
+
+greet(lang);
